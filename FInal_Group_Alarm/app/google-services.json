@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "111496816681",
+    "project_id": "final-group-alarm",
+    "storage_bucket": "final-group-alarm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:111496816681:android:ce081d9028e145cf7b1438",
+        "android_client_info": {
+          "package_name": "net.gitanjit.final_group_alarm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "111496816681-6fimrmgbj1s1fv66g9cakglcfn5m99al.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtXXQb8J9f98Kg6CALkP453WxYD7D5xV4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "111496816681-6fimrmgbj1s1fv66g9cakglcfn5m99al.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
