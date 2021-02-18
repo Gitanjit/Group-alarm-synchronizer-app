@@ -22,7 +22,6 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.auth.FirebaseUser;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -99,13 +98,13 @@ public class Register extends AppCompatActivity {
                             Toast.makeText(Register.this, "User Created.", Toast.LENGTH_SHORT).show();
                             userID = fAuth.getCurrentUser().getUid();
                             reference  = rootNode.getReference("Users");
-                            UserHelperClass helperclass = new UserHelperClass(fullName,email,password,phone,userID);//usinf userhelperclass instead of map
-                           // Map<String,Object> user = new HashMap<>();
-                            //user.put("fName",fullName);
-                            //user.put("email",email);
-                           // user.put("phone",phone);
-                            //user.put("user_id",userID);
-                            reference.child(userID).setValue(helperclass).addOnSuccessListener(new OnSuccessListener<Void>() {
+                            //UserHelperClass helperclass = new UserHelperClass(fullName,email,password,phone,userID);//usinf userhelperclass instead of map
+                            Map<String,Object> user = new HashMap<>();
+                            user.put("fullName",fullName);
+                            user.put("email",email);
+                            user.put("phone",phone);
+                            user.put("user_id",userID);
+                            reference.child(userID).setValue(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                                 @Override
                                 public void onSuccess(Void aVoid) {
                                     Log.d(TAG, "onSuccess: user Profile is created for "+ userID);

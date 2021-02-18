@@ -1,56 +1,42 @@
 package net.gitanjit.final_group_alarm;
 
 public class UserHelperClass {
-String mFullName,mEmail,mPassword,mPhone,userID;
 
-    public UserHelperClass() {
+    public String fullName, phone, email ;
+    //public ArrayList< UserHelperClass >
+
+
+    public UserHelperClass(String fullName , String phone, String email )
+    {
+        this.fullName = fullName;
+        this.phone = phone;
+        this.email = email;
+    }
+    public UserHelperClass() {}
+
+
+
+    public String getFullName() {
+        return fullName;
     }
 
-    public UserHelperClass(String mFullName,String mEmail,String mPassword,String mPhone,String userID) {
-        this.mFullName = mFullName;
-        this.mEmail = mEmail;
-        this.mPassword = mPassword;
-        this.mPhone = mPhone;
-        this.userID = userID;
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
     }
 
-    public String getmFullName() {
-        return mFullName;
+    public String getPhone() {
+        return phone;
     }
 
-    public void setmFullName(String mFullName) {
-        this.mFullName = mFullName;
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 
-    public String getmEmail() {
-        return mEmail;
+    public String getEmail() {
+        return email;
     }
 
-    public void setmEmail(String mEmail) {
-        this.mEmail = mEmail;
-    }
-
-    public String getmPassword() {
-        return mPassword;
-    }
-
-    public void setmPassword(String mPassword) {
-        this.mPassword = mPassword;
-    }
-
-    public String getmPhone() {
-        return mPhone;
-    }
-
-    public void setmPhone(String mPhone) {
-        this.mPhone = mPhone;
-    }
-
-    public String getUserID() {
-        return userID;
-    }
-
-    public void setUserID(String userID) {
-        this.userID = userID;
+    public void setEmail(String email) {
+        this.email = email;
     }
 }

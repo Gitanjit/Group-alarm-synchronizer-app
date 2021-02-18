@@ -11,7 +11,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FInal_Group_Alarm">
-        <activity android:name=".Login"></activity>
+        <activity android:name=".AddUserToGrp"></activity>
+        <activity android:name=".Viewusers" />
+        <activity android:name=".MakeGroup" />
+        <activity android:name=".Login" />
         <activity android:name=".Register">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
